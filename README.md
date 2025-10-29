@@ -61,6 +61,7 @@ project/
 
 | Package | Purpose |
 |----------|----------|
+| **argparse** | Command-line argument parsing for R scripts |
 | **data.table** | Fast file I/O and manipulation |
 | **tidyverse** | Core data wrangling (`dplyr`, `tidyr`, `ggplot2`, `readr`) |
 | **reshape** | Parse variant IDs (`colsplit`) |
