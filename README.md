@@ -2,57 +2,11 @@
 
 ## Overview
 
-This repository contains scripts for:
-
+This repository contains scripts for the paper “Common genetic determinants of longitudinal human in vivo immune response to Mycobacterium tuberculosis.”
 xxxxxxx
 
----
 
-## Environment & Dependencies
-
-### R (≥ 4.2.1)
-
-| Package | Purpose |
-|----------|----------|
-| **data.table** | Fast file I/O and manipulation |
-| **tidyverse** | Core data wrangling (`dplyr`, `tidyr`, `ggplot2`, `readr`) |
-| **reshape** | Parse variant IDs (`colsplit`) |
-| **MatrixEQTL** | cis/trans-eQTL mapping |
-| **lme4**, **lmerTest** | Linear mixed models and p-values |
-| **foreach**, **doMC** | Parallel loops for SNP/gene scans |
-| **coloc** | Bayesian colocalisation |
-| **seqminer** | Tabix-based read of summary statistics |
-| **GenomicRanges** | Interval operations for eQTLs |
-| **ggplot2**, **circlize**, **scales** | Visualisation |
-
----
-
-### Python / CLI Tools
-
-| Tool | Version (example) | Purpose |
-|------|-------------------|---------|
-| **FastQTL** | ≥ 2.184 | cis/trans eQTL discovery |
-| **HISAT2** | ≥ 2.1.0 | RNA-seq alignment |
-| **featureCounts** | ≥ 1.6.4 | Gene quantification |
-| **samtools** | ≥ 1.9 | BAM processing |
-| **bcftools** | ≥ 1.10 | VCF filtering / annotation |
-| **htslib** (bgzip, tabix) | ≥ 1.8 | Compression / indexing |
-| **Picard Tools** | ≥ 2.21.1 | BAM deduplication, read-group assignment |
-| **eigenMT** | Python 3 | Conditional cis-eQTL fine-mapping |
-| **Anaconda** | ≥ 2023.07 | Environment management |
-
----
-
-### HPC Environment
-
-| Tool | Purpose |
-|------|----------|
-| **SBATCH (SLURM)** | Array & batch job submission |
-| **module load / purge** | HPC environment setup |
-
----
-
-## Pipeline Components
+## Pipeline
 
 | Step    | Script                                            | Description                                                                         |
 | ------- | ------------------------------------------------- | ----------------------------------------------------------------------------------- |
@@ -97,6 +51,52 @@ project/
 └── logs/
 ```
 
+
+---
+
+## Environment & dependencies
+
+### R (≥ 4.2.1)
+
+| Package | Purpose |
+|----------|----------|
+| **data.table** | Fast file I/O and manipulation |
+| **tidyverse** | Core data wrangling (`dplyr`, `tidyr`, `ggplot2`, `readr`) |
+| **reshape** | Parse variant IDs (`colsplit`) |
+| **MatrixEQTL** | cis/trans-eQTL mapping |
+| **lme4**, **lmerTest** | Linear mixed models and p-values |
+| **foreach**, **doMC** | Parallel loops for SNP/gene scans |
+| **coloc** | Bayesian colocalisation |
+| **seqminer** | Tabix-based read of summary statistics |
+| **GenomicRanges** | Interval operations for eQTLs |
+| **ggplot2**, **circlize**, **scales** | Visualisation |
+
+---
+
+### Python & command-line tools
+
+| Tool | Version (example) | Purpose |
+|------|-------------------|---------|
+| **FastQTL** | ≥ 2.184 | cis/trans eQTL discovery |
+| **HISAT2** | ≥ 2.1.0 | RNA-seq alignment |
+| **featureCounts** | ≥ 1.6.4 | Gene quantification |
+| **samtools** | ≥ 1.9 | BAM processing |
+| **bcftools** | ≥ 1.10 | VCF filtering / annotation |
+| **htslib** (bgzip, tabix) | ≥ 1.8 | Compression / indexing |
+| **Picard Tools** | ≥ 2.21.1 | BAM deduplication, read-group assignment |
+| **eigenMT** | Python 3 | Conditional cis-eQTL fine-mapping |
+| **Anaconda** | ≥ 2023.07 | Environment management |
+
+---
+
+### HPC environment
+
+| Tool | Purpose |
+|------|----------|
+| **SBATCH (SLURM)** | Array & batch job submission |
+| **module load / purge** | HPC environment setup |
+
+---
 
 ## ✉️ Contact
 For questions, please contact:  
