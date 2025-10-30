@@ -28,8 +28,9 @@ xxxxxxx
 | **6.6** | `conditional.analysis_lmerTest-array-ALL.pairs.r` | Stepwise forward/backward conditional mapping using lmerTest                        |
 | **7.1** | `Coloc_run_arrayR-eQTL.r`                         | Colocalisation analysis for eQTL Catalogue vs TB summary statistics                 |
 | **7.2** | `Coloc_SGE_array_LMM.resul_with.GWAS_opti.r`      | Colocalisation between TB eQTLs and GWAS summary statistics                         |
-| **8.1** | `interaction.analysis-Day7vsDay2.r`               | SNP × TB_Status (Day7 vs Day2) interaction analysis                                 |
-| **8.2** | `interaction.analysis_cell.module.r`              | SNP x cell module interaction analysis                                              |
+| **8.1** | `LD Score (ldsc) regression analysis`             | Partitioned heritability estimation                                                 |
+| **9.1** | `interaction.analysis-Day7vsDay2.r`               | SNP × TB_Status (Day7 vs Day2) interaction analysis                                 |
+| **9.2** | `interaction.analysis_cell.module.r`              | SNP x cell module interaction analysis                                              |
 ---
 
 ** directory layout:**
