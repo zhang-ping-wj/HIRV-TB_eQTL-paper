@@ -2,7 +2,12 @@
 
 ## Overview
 
-This repository contains scripts for the paper “Common genetic determinants of longitudinal human in vivo immune response to Mycobacterium tuberculosis.”
+This repository contains scripts for the paper:
+
+Author list xxxxx
+
+“**Common genetic determinants of longitudinal human *in vivo* immune response to Mycobacterium tuberculosis.**”
+
 xxxxxxx
 
 
