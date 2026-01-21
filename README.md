@@ -22,29 +22,7 @@ We lack sufficient understanding of the immunological determinants of protection
 
 
 
-| Step    | Script                                            | Description                                                                         |
-| ------- | ------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| **1.1** | `vcf_for_imputation.sh`                           | Prepare VCF for imputation by filtering and splitting per chromosome                |
-| **1.2** | `for.PCA.sh`                                      | Filter imputed VCFs and convert to PLINK format for PCA                             |
-| **1.3** | `pca.sh`                                          | Perform PCA on merged genotype data with 1000 Genomes reference data                |
-| **2.1** | `hisat2_mapping.sh`                               | RNA-seq read mapping using HISAT2                                                   |
-| **2.2** | `featurecount.sh`                                 | Generate read counts using featureCounts                                            |
-| **3.1** | `dedup_rg_reorder.sh`                             | Remove duplicates, add read groups, and reorder BAM files                           |
-| **3.2** | `crosscheck.sh`                                   | Perform cross-checking of DNA and RNA samples using Picard’s CrosscheckFingerprints |
-| **4.1** | `MatrixeQTL_cis.R`                                | Run MatrixEQTL using different expression PCs                                       |
-| **4.2** | `trans-day7.PC25_subset.SNPs.R`                   | trans-eQTL mapping using day7 lead cis-eQTLs                                        |
-| **5.1**   | `run_fastqtl.sh`                                  | Run FastQTL for permutations and nominal passes                                     |
-| **6.1** | `lmm.R`                                           | LMM model for cis-eQTL mapping                                                      |
-| **6.2** | `eigenMT-input.r`                                 | Prepare eigenMT input                                                               |
-| **6.3** | `eigenMT_python3.py`                              | Python eigenMT script                                                               |
-| **6.4** | `run_eigenMT_array.sh`                            | SLURM array script to run eigenMT per chromosome                                    |
-| **6.5** | `eigenMT-qvalue-significance.threshold.r`         | Compute q-values for eigenMT results and define significance thresholds             |
-| **6.6** | `conditional.analysis_lmerTest-array-ALL.pairs.r` | Stepwise forward/backward conditional mapping using lmerTest                        |
-| **7.1** | `Coloc_run_arrayR-eQTL.r`                         | Colocalisation analysis for eQTL Catalogue vs TB summary statistics                 |
-| **7.2** | `Coloc_SGE_array_LMM.resul_with.GWAS_opti.r`      | Colocalisation between TB eQTLs and GWAS summary statistics                         |
-| **8.1** | `LD Score (ldsc) regression analysis`             | Partitioned heritability estimation                                                 |
-| **9.1** | `interaction.analysis-Day7vsDay2.r`               | SNP × TB_Status (Day7 vs Day2) interaction analysis                                 |
-| **9.2** | `interaction.analysis_cell.module.r`              | SNP x cell module interaction analysis                                              |
+
 ---
 
 ** directory layout:**
@@ -99,6 +77,30 @@ We lack sufficient understanding of the immunological determinants of protection
 
 ```
 
+---
+| Step    | Script                                            | Description                                                                         |
+| ------- | ------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **1.1** | `vcf_for_imputation.sh`                           | Prepare VCF for imputation by filtering and splitting per chromosome                |
+| **1.2** | `for.PCA.sh`                                      | Filter imputed VCFs and convert to PLINK format for PCA                             |
+| **1.3** | `pca.sh`                                          | Perform PCA on merged genotype data with 1000 Genomes reference data                |
+| **2.1** | `hisat2_mapping.sh`                               | RNA-seq read mapping using HISAT2                                                   |
+| **2.2** | `featurecount.sh`                                 | Generate read counts using featureCounts                                            |
+| **3.1** | `dedup_rg_reorder.sh`                             | Remove duplicates, add read groups, and reorder BAM files                           |
+| **3.2** | `crosscheck.sh`                                   | Perform cross-checking of DNA and RNA samples using Picard’s CrosscheckFingerprints |
+| **4.1** | `MatrixeQTL_cis.R`                                | Run MatrixEQTL using different expression PCs                                       |
+| **4.2** | `trans-day7.PC25_subset.SNPs.R`                   | trans-eQTL mapping using day7 lead cis-eQTLs                                        |
+| **5.1**   | `run_fastqtl.sh`                                  | Run FastQTL for permutations and nominal passes                                     |
+| **6.1** | `lmm.R`                                           | LMM model for cis-eQTL mapping                                                      |
+| **6.2** | `eigenMT-input.r`                                 | Prepare eigenMT input                                                               |
+| **6.3** | `eigenMT_python3.py`                              | Python eigenMT script                                                               |
+| **6.4** | `run_eigenMT_array.sh`                            | SLURM array script to run eigenMT per chromosome                                    |
+| **6.5** | `eigenMT-qvalue-significance.threshold.r`         | Compute q-values for eigenMT results and define significance thresholds             |
+| **6.6** | `conditional.analysis_lmerTest-array-ALL.pairs.r` | Stepwise forward/backward conditional mapping using lmerTest                        |
+| **7.1** | `Coloc_run_arrayR-eQTL.r`                         | Colocalisation analysis for eQTL Catalogue vs TB summary statistics                 |
+| **7.2** | `Coloc_SGE_array_LMM.resul_with.GWAS_opti.r`      | Colocalisation between TB eQTLs and GWAS summary statistics                         |
+| **8.1** | `LD Score (ldsc) regression analysis`             | Partitioned heritability estimation                                                 |
+| **9.1** | `interaction.analysis-Day7vsDay2.r`               | SNP × TB_Status (Day7 vs Day2) interaction analysis                                 |
+| **9.2** | `interaction.analysis_cell.module.r`              | SNP x cell module interaction analysis                                              |
 
 ---
 
@@ -121,7 +123,6 @@ We lack sufficient understanding of the immunological determinants of protection
 | **ggplot2**, **circlize**, **scales** | Visualisation |
 
 ---
-
 ### Python & command-line tools
 
 | Tool | Version (example) | Purpose |
