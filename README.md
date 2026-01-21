@@ -4,10 +4,8 @@
 
 This repository contains scripts for the paper:
 
-Title: 
 **Common genetic determinants of dynamic human *in vivo* immune response to Mycobacterium tuberculosis.**
 
-Authors: 
 Ping Zhang, Carolin T Turner, Aneesh Chandran, Joshua Rosenheim, Jana Jiang, Lucy K Bell, Santino Capocci, Marc Lipman, Heinke Kunst, Stefan Lozewicz, Gillian S Tomlinson, Julian C Knight and Mahdad Noursadeghi
 
 Abstract: 
@@ -16,12 +14,9 @@ We lack sufficient understanding of the immunological determinants of protection
 
 ## Pipeline
 
-
-
-
-
-
-
+<div align="center">
+  <img src="output/model.png" alt="Screenshot" width="80%" />
+</div>
 
 ---
 
