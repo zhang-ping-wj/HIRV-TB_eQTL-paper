@@ -15,7 +15,7 @@ We lack sufficient understanding of the immunological determinants of protection
 ## Pipeline
 
 <div align="center">
-  <img src="output/model.png" alt="Screenshot" width="80%" />
+  <img src="docs/2.png" alt="Screenshot" width="80%" />
 </div>
 
 ---
