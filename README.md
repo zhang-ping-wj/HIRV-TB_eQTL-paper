@@ -11,7 +11,6 @@ Ping Zhang, Carolin T Turner, Aneesh Chandran, Joshua Rosenheim, Jana Jiang, Luc
 Abstract: 
 We lack sufficient understanding of the immunological determinants of protection and pathogenesis in tuberculosis (TB) to stratify disease risk or develop effective vaccines. Given evidence of shared genetic susceptibility, we investigated how genetic variation influences transcriptional immune responses to Mycobacterium tuberculosis (Mtb). We performed a genome-wide expression quantitative trait loci (eQTL) study of human in vivo immune responses using the tuberculin skin test (TST), which models cell-mediated immunity at the site of TB disease. Colocalisation with GWAS data revealed potential novel TB susceptibility loci. We analysed paired genotyping and RNA-seq data from 267 individuals with latent or active TB, using TST biopsies at day2 (inflammation) and day7 (antigen-specific T cell expansion). We identified cis-eQTLs for 1,719 TST-responsive genes, enriched for antigen presentation and T cell activation pathways, largely driven by HLA class II variants. Non-coding HLA-DR eQTLs were associated with expansion of Mtb-reactive T cells, while trans-eQTLs at day7 highlighted cell-cycle regulation via NCAPD3. 
 
-
 ## Pipeline
 
 <div align="center">
